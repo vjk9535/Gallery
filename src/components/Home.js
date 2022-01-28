@@ -24,7 +24,7 @@ const Home = () => {
         </ul>
         <span className="nameAlign">
           <div>
-            <h1 data-text="I'am ,">I'am , </h1>
+            <h1 data-text="I'am ,">I'am ,</h1>
             <h1 data-text="Sindhuja Vangipuram,">Sindhuja Vangipuram,</h1>
             <h1 data-text="Photographer.">Photographer.</h1>
           </div>

@@ -20,7 +20,7 @@
 
 .square {
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   background-color: #f2f2f2;
   animation: boxes 10s infinite ease-in-out;
   border-radius: 10px;
@@ -89,6 +89,7 @@ h1 {
   font-weight: 900;
   font-family: "Courgette";
 }
+
 h1::before {
   content: attr(data-text);
   position: absolute;
@@ -346,3 +347,35 @@ button:hover::after {
   flex-direction: column;
 }
 /* end of About CSS */
+@media screen and (max-width: 823px) {
+  h1 {
+    font-size: 22px;
+  }
+  .profileImg {
+    width: 150px;
+    height: 150px;
+  }
+  .imageSet,
+  .imageSet1 {
+    width: 200px;
+    height: 200px;
+  }
+  .imageSet2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .imageSet,
+  .imageSet1 {
+    width: 150px;
+    height: 150px;
+  }
+  .imageSet2 {
+    width: 100px;
+    height: 100px;
+  }
+  .gallery {
+    height: 50vh;
+  }
+}
