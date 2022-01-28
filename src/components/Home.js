@@ -1,10 +1,7 @@
 import React from "react";
 import { Image } from "semantic-ui-react";
-import { useState } from "react";
 
 const Home = () => {
-  const [activeItem, setActiveItem] = useState("Home");
-  const handleItemClick = (e, { name }) => setActiveItem(name);
   return (
     <>
       <div className="App">
@@ -19,13 +16,13 @@ const Home = () => {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/gallery">Gallery</a>
+            <a href="/Gallery">Gallery</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="/FeedBackForm">About</a>
           </li>
         </ul>
-        <span>
+        <span className="nameAlign">
           <div>
             <h1 data-text="I'am ,">I'am , </h1>
             <h1 data-text="Sindhuja Vangipuram,">Sindhuja Vangipuram,</h1>
@@ -34,7 +31,7 @@ const Home = () => {
           <div>
             <Image
               className="profileImg"
-              src="IMG_20191026_213049.jpg"
+              src="profilepic.jpg"
               alt="vijay"
               width="300"
               height="300"

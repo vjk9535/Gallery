@@ -1,8 +1,5 @@
 import React from "react";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
 import { Image } from "semantic-ui-react";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
 const Gallery = () => {
@@ -582,23 +579,25 @@ const Gallery = () => {
 
   return (
     <>
-      <div className="gallery App">
+      <div className="gallery">
         <div className="gallery-title">
-          <h1>Image Gallery</h1>
+          <div>
+            <h1>Image Gallery</h1>
+          </div>
           <ul className="ulAlign">
             <li>
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/gallery">Gallery</a>
+              <a href="/Gallery">Gallery</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="/FeedBackForm">About</a>
             </li>
           </ul>
         </div>
         {/* <Box sx={{ flexGrow: 1 }}> */}
-        <div
+        <Grid
           container
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
@@ -614,8 +613,8 @@ const Gallery = () => {
               />
             ))}
           </span>
-        </div>
-        <div
+        </Grid>
+        <Grid
           container
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
@@ -631,29 +630,29 @@ const Gallery = () => {
               />
             ))}
           </span>
-        </div>
-
+        </Grid>
         {/* </Box> */}
       </div>
-
-      <div
-        className="horizontalGrid"
-        container
-        spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}
-      >
+      <div className="Title">
         <h1 className="belowTitle">My Photo Gallery</h1>
-        <span className="alignImageDirect2">
-          {itemData2.map((item_set3) => (
-            <Image
-              src={`${item_set3.img}`}
-              alt={item_set3.title}
-              width="275"
-              height="275"
-              className="imageSet2"
-            />
-          ))}
-        </span>
+        <div
+          className="horizontalGrid"
+          container
+          spacing={{ xs: 2, md: 3 }}
+          columns={{ xs: 4, sm: 8, md: 12 }}
+        >
+          <span className="alignImageDirect2">
+            {itemData2.map((item_set3) => (
+              <Image
+                src={`${item_set3.img}`}
+                alt={item_set3.title}
+                width="275"
+                height="275"
+                className="imageSet2"
+              />
+            ))}
+          </span>
+        </div>
       </div>
     </>
   );
