@@ -365,7 +365,7 @@ button:hover::after {
     height: 150px;
   }
   .gallery {
-    height: 60vh;
+    height: 70vh;
   }
 }
 @media screen and (max-width: 700px) {
@@ -379,24 +379,24 @@ button:hover::after {
     height: 100px;
   }
   .gallery {
-    height: 50vh;
+    height: 60vh;
   }
 }
 @media screen and (max-width: 445px) {
   .imageSet,
   .imageSet1 {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .imageSet2 {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .gallery {
-    height: 30vh;
+    height: 40vh;
   }
   .App {
-    height: 50vh;
+    height: 60vh;
   }
   h1 {
     padding-top: 20px;
